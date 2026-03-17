@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outclaw AI — The Newsletter With Claws</title>
+  <meta name="description" content="Practical AI workflows, real tools, one thing to do this week. Join thousands of operators shipping better AI projects.">
+  <link rel="canonical" href="https://outclaw.ai/">
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Outclaw AI — The Newsletter With Claws">
+  <meta property="og:description" content="Practical AI workflows, real tools, one thing to do this week.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://outclaw.ai/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="/" class="navbar-logo">
+      <svg width="30" height="30" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <path d="M371.754459 539.805346c-63.710283-48.000624-110.109971-68.805307-139.204059-62.414048-43.639883 9.588137-102.137756 128.352156-89.884722 141.112195 12.253034 12.760039 44.191844-90.554068 89.88722-97.030244 30.457756-4.318283 74.252488 16.751141 131.366712 63.205775l7.834849-44.873678z" fill="#FF5500"/>
+        <path d="M389.617015 442.068293c19.311141 0 34.965854-16.391493 34.965853-36.614244s-15.65721-38.312585-34.965853-38.312586-34.965854 18.092332-34.965854 38.312586 15.654712 36.614244 34.965854 36.614244z" fill="#FFFFFF"/>
+        <path d="M482.026771 447.063415c27.588059 0 49.95122-22.150868 49.951219-49.476683S507.007376 347.160976 479.419317 347.160976c-27.585561 0-47.343766 23.102439-47.343766 50.425756s22.363161 49.476683 49.95122 49.476683z" fill="#FFFFFF"/>
+      </svg>
+      <span class="navbar-wordmark">OUT<span class="c">CLAW</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="navbar-links">
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/articles.html">Articles</a>
+      <a href="/guides.html">Guides</a>
+    </div>
+    <a href="#subscribe" class="nav-cta">Subscribe</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Weekly Newsletter
+      </div>
+      <div class="hero-logo-lockup">
+        <svg class="hero-crab" width="100" height="100" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path d="M371.754459 539.805346c-63.710283-48.000624-110.109971-68.805307-139.204059-62.414048-43.639883 9.588137-102.137756 128.352156-89.884722 141.112195 12.253034 12.760039 44.191844-90.554068 89.88722-97.030244 30.457756-4.318283 74.252488 16.751141 131.366712 63.205775l7.834849-44.873678z" fill="#FF5500"/>
+          <path d="M363.582439 543.044683l-4.867746 27.887766c-53.84242-42.156332-95.963785-61.307629-127.215766-56.876956-20.939551 2.967102-38.599805 20.799688-58.535337 52.316409-4.563044 7.210459-19.418537 32.498263-22.293229 36.921444-0.382127 0.589424-0.754263 1.151376-1.113912 1.685854 0.674341-2.95961 1.65838-6.373776 2.939629-10.14759 4.355746-12.81998 11.75602-28.766907 20.657327-44.356683 20.462517-35.84 44.081951-62.046907 61.002927-65.763278 25.704898-5.649483 69.282341 13.549268 129.426107 58.333034z" fill="#1E1E24"/>
+          <path d="M389.617015 442.068293c19.311141 0 34.965854-16.391493 34.965853-36.614244s-15.65721-38.312585-34.965853-38.312586-34.965854 18.092332-34.965854 38.312586 15.654712 36.614244 34.965854 36.614244z" fill="#FFFFFF"/>
+          <path d="M482.026771 447.063415c27.588059 0 49.95122-22.150868 49.951219-49.476683S507.007376 347.160976 479.419317 347.160976c-27.585561 0-47.343766 23.102439-47.343766 50.425756s22.363161 49.476683 49.95122 49.476683z" fill="#FFFFFF"/>
+          <path d="M616.832624 506.445424c63.81518-47.413698 110.292293-67.961132 139.433835-61.647297 43.712312 9.470751 102.305093 126.778693 90.032078 139.378888-12.273015 12.602693-44.266771-89.442654-90.032078-95.838908-30.512702-4.265834-74.372371 16.543844-131.584 62.429034l-7.849835-44.321717z" fill="#FF5500"/>
+          <path d="M477.51118 419.590244c7.807376 0 31.634107 1.620917 71.480196 4.862751 64.12238 5.217405 129.663376 55.832976 128.936585 123.274615s-59.726673 111.888234-113.072078 123.334556c-53.345405 11.443824-82.132293 7.150517-133.115005 0-50.982712-7.153015-97.787005-58.667707-97.787005-117.992273-12.075707-3.221854-40.660293-15.429932-39.189229-23.114927C304.607532 478.472741 345.984624 437.440312 399.464898 429.430634 443.267122 422.869541 469.281717 419.590244 477.51118 419.590244z" fill="#FF5500"/>
+        </svg>
+        <div>
+          <div class="hero-wordmark-big">OUT<span class="c">CLAW</span> AI</div>
+          <div class="hero-wordmark-sub">The Newsletter With Claws</div>
+        </div>
+      </div>
+      <h1 class="hero-headline">
+        Practical AI <span class="ac">Workflows</span><br>
+        <span class="outline">Real Tools</span> <span class="ac2">No Hype</span>
+      </h1>
+      <p class="hero-sub">
+        One thing to do this week. Not "10 AI trends to watch" — just actionable stuff that makes your project better by Tuesday.
+      </p>
+      <form class="hero-form newsletter-form" id="subscribe">
+        <input type="email" placeholder="your@email.com" required>
+        <button type="submit" class="hero-form-btn">Subscribe</button>
+      </form>
+      <p class="hero-microcopy">Join 2,847 operators. One email per week. Unsubscribe anytime.</p>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">52<span>+</span></div>
+          <div class="stat-label">Issues Sent</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">2.8<span>k</span></div>
+          <div class="stat-label">Subscribers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">68<span>%</span></div>
+          <div class="stat-label">Open Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ticker -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span class="ticker-item">AI Agents <span class="hi">→</span></span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Claude Projects <span class="hi">→</span></span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">MCP Servers <span class="hi">→</span></span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Prompt Engineering <span class="hi">→</span></span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">AI Agents <span class="hi">→</span></span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Claude Projects <span class="hi">→</span></span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">MCP Servers <span class="hi">→</span></span>
+      <span class="ticker-sep">✦</span>
+      <span class="ticker-item">Prompt Engineering <span class="hi">→</span></span>
+      <span class="ticker-sep">✦</span>
+    </div>
+  </div>
+
+  <!-- Value Props -->
+  <section class="section">
+    <div class="section-header centered">
+      <span class="eyebrow">Why Outclaw</span>
+      <h2 class="section-title">Not Another <span class="ac">AI Newsletter</span></h2>
+      <p class="section-subtitle">We do not cover "AI news." We cover what you can actually ship.</p>
+    </div>
+    <div class="content-grid">
+      <div class="content-card">
+        <div class="card-icon">Workflows</div>
+        <div class="card-emoji">⚡</div>
+        <h3 class="card-title">Real Workflows</h3>
+        <p class="card-desc">Every issue includes something you can implement today. No fluff, no futures thinking.</p>
+      </div>
+      <div class="content-card">
+        <div class="card-icon">Tools</div>
+        <div class="card-emoji">🔧</div>
+        <h3 class="card-title">Real Tools</h3>
+        <p class="card-desc">We test everything. You get the actual setup, not a product pitch.</p>
+      </div>
+      <div class="content-card">
+        <div class="card-icon">Action</div>
+        <div class="card-emoji">→</div>
+        <h3 class="card-title">One Thing</h3>
+        <p class="card-desc">Every issue has exactly one actionable takeaway. Implement it this week.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Articles -->
+  <section class="section" style="background: var(--surface);">
+    <div class="section-header centered">
+      <span class="eyebrow">Latest</span>
+      <h2 class="section-title">Recent <span class="ac">Articles</span></h2>
+    </div>
+    <div class="content-grid" id="articles-grid">
+      <!-- Loaded from articles.json -->
+      <div class="content-card">
+        <div class="card-icon">Tools</div>
+        <h3 class="card-title">Claude vs ChatGPT</h3>
+        <p class="card-desc">For newsletter writing specifically, Claude wins — but the reason matters.</p>
+        <a href="/articles.html" style="font-family: var(--font-mono); font-size: 11px; color: var(--accent); text-decoration: none; margin-top: 16px; display: block;">Read More →</a>
+      </div>
+      <div class="content-card">
+        <div class="card-icon">Industry</div>
+        <h3 class="card-title">The Rise of AI Agents</h3>
+        <p class="card-desc">How autonomous agents are changing software development.</p>
+        <a href="/articles.html" style="font-family: var(--font-mono); font-size: 11px; color: var(--accent); text-decoration: none; margin-top: 16px; display: block;">Read More →</a>
+      </div>
+      <div class="content-card">
+        <div class="card-icon">Tutorials</div>
+        <h3 class="card-title">MCP: The Missing Protocol</h3>
+        <p class="card-desc">Model Context Protocol is solving a problem every AI builder faces.</p>
+        <a href="/articles.html" style="font-family: var(--font-mono); font-size: 11px; color: var(--accent); text-decoration: none; margin-top: 16px; display: block;">Read More →</a>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 48px;">
+      <a href="/articles.html" class="btn btn-ghost">View All Articles</a>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <h3 class="cta-banner-title">Ready to Ship Better AI Projects?</h3>
+    <p class="cta-banner-sub">Get one actionable workflow in your inbox every Tuesday.</p>
+    <form class="hero-form newsletter-form" style="margin: 0 auto;">
+      <input type="email" placeholder="your@email.com" required>
+      <button type="submit" class="hero-form-btn">Subscribe Free</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content" style="max-width: 1100px; margin: 0 auto; padding: 48px 40px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 32px;">
+      <div class="footer-logo">
+        <svg width="22" height="22" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <path d="M371.754459 539.805346c-63.710283-48.000624-110.109971-68.805307-139.204059-62.414048-43.639883 9.588137-102.137756 128.352156-89.884722 141.112195 12.253034 12.760039 44.191844-90.554068 89.88722-97.030244 30.457756-4.318283 74.252488 16.751141 131.366712 63.205775l7.834849-44.873678z" fill="#FF5500"/>
+          <path d="M389.617015 442.068293c19.311141 0 34.965854-16.391493 34.965853-36.614244s-15.65721-38.312585-34.965853-38.312586-34.965854 18.092332-34.965854 38.312586 15.654712 36.614244 34.965854 36.614244z" fill="#FFFFFF"/>
+          <path d="M482.026771 447.063415c27.588059 0 49.95122-22.150868 49.951219-49.476683S507.007376 347.160976 479.419317 347.160976c-27.585561 0-47.343766 23.102439-47.343766 50.425756s22.363161 49.476683 49.95122 49.476683z" fill="#FFFFFF"/>
+        </svg>
+        <span class="footer-logo-text">OUT<span class="c">CLAW</span> AI</span>
+      </div>
+      <div class="footer-links" style="display: flex; gap: 32px;">
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 10px; letter-spacing: .15em; text-transform: uppercase; color: var(--dim); margin-bottom: 12px;">Pages</div>
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/articles.html">Articles</a>
+          <a href="/guides.html">Guides</a>
+        </div>
+        <div>
+          <div style="font-family: var(--font-mono); font-size: 10px; letter-spacing: .15em; text-transform: uppercase; color: var(--dim); margin-bottom: 12px;">Connect</div>
+          <a href="#">Twitter</a>
+          <a href="mailto:zach@outclaw.ai">Email</a>
+        </div>
+      </div>
+    </div>
+    <div style="border-top: 1px solid var(--border); padding: 24px 40px; text-align: center;">
+      <p class="footer-copy">© 2026 Outclaw AI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Outclaw AI",
+    "url": "https://outclaw.ai",
+    "description": "Practical AI workflows, real tools, one thing to do this week."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Outclaw AI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Outclaw AI is a weekly newsletter delivering practical AI workflows, real tool recommendations, and actionable insights for operators building with AI."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often is Outclaw published?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Outclaw sends one issue per week, every Tuesday morning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Outclaw free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Outclaw is free to subscribe. All articles and guides are freely accessible."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
